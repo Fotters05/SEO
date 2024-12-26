@@ -1,256 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="yandex-verification" content="77d63b22713f24e5" />
-    <meta name="google-site-verification" content="EB8IMlJ4fgLQaqusf7s1CwIEolX8yjJZgLOyy61u6Vc" />
-
-    <link rel="stylesheet" href="./styles.css">
-
-    <title>CASTAWAY</title>
+    <title>Обратный отсчет до встречи</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #timer {
+            font-size: 18px;
+            color: blue;
+            margin-bottom: 20px;
+        }
+        #image {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav class="nav">
-                <div class="nav__logo">
-                    <img src="./image/logo.png" alt="logo_svg">
-                </div>
-                <div class="nav__menu">
-                    <a class="nav__link disabled" href="#">Home</a>
-                    <a class="nav__link disabled" href="#">Episodes</a>
-                    <a class="nav__link disabled" href="#">About</a>
-                    <a class="nav__link disabled" href="#">Contact</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="home" id="home">
-                <div class="home__img">
-                    <img src="./image/photo1.png" alt="photo1">
-                </div>
-                <div class="home__content">
-                    <h1 class="home__title">Take your<br>podcast to the<br>
-                        <div class="home__underline-text">
-                            next 
-                            <img class="home__underline-img" src="./image/Vector.png" alt="underline_svg">
-                        </div>
-                        <span class="bold-title">level<span></h1>
-                    <div class="home__socials">
-                        <p>Listen on</p>
-                        <div class="home__socials-img">
-                            <a class="home__link" href="#"><img src="./image/spotify.png" alt="spotify_logo"></a>
-                            <a class="home__link" href="#"><img src="./image/krasnoe.svg" alt="krasnoe"></a>
-                            <a class="home__link" href="#"><img src="./image/sound.svg" alt="sound_logo"></a>
-                            <a class="home__link" href="#"><img src="./image/fiol.svg" alt="fiol_logo"></a>
-                            <a class="home__link" href="#"><img src="./image/radio.svg" alt="radio_logo"></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="episodes" id="episode">
-                <div class="episodes__header">
-                    <h2 class="episodes__header-title">Latest episodes</h2>
-                    <button class="episodes__header-btn">View all episodes</button>
-                </div>
-                <div class="episodes__top">
-                    <div class="episodes__top-1">
-                        <img src="./image/outboard.png" alt="outboard">
-                    </div>
-                    <div class="episodes__top-2">
-                        <button class="episodes__top-2-content">
-                            Gear
-                        </button>
-                        <div class="episodes__top-2-number">Episode 3</div>
-                        <h3 class="episodes__top-2-title">Should you get outboard audio gear?</h3>
-                        <p class="episodes__top-2-text">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
-                        <button class="episodes__top-2-btn episodes__btn">
-                            View Episode Details
-                        </button>
-                    </div>
-                </div>
-                <div class="episodes__middle">
-                    <div class="episodes__middle-1">
-                        <img src="./image/micro.png" alt="micro">
-                    </div>
-                    <div class="episodes__middle-2">
-                        <button class="episodes__middle-2-content">
-                            Tips & Tricks
-                        </button>
-                        <div class="episodes__middle-2-number">Episode 2</div>
-                        <h3 class="episodes__middle-2-title">Mic tricks to take you to the next level</h3>
-                        <p class="episodes__middle-2-text">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
-                        <button class="episodes__middle-2-btn episodes__btn">
-                            View Episode Details
-                        </button>
-                    </div>
-                </div>
-                <div class="episodes__bottom">
-                    <div class="episodes__bottom-1">
-                        <img src="./image/microphone.png" alt="microphone">
-                    </div>
-                    <div class="episodes__bottom-2">
-                        <button class="episodes__bottom-2-content">
-                            Gear
-                        </button>
-                        <div class="episodes__bottom-2-number">Episode 1</div>
-                        <h3 class="episodes__bottom-2-title">The best microphone under $200</h3>
-                        <p class="episodes__bottom-2-text">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
-                        <button class="episodes__bottom-2-btn episodes__btn">
-                            View Episode Details
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="jacob" id="about">
-                <div class="jacob__intro">
-                    <img src="./image/Arrow.png" alt="arrow">
-                    <p class="jacob__intro-paragraph">Meet your host</p>
-                    <h2 class="jacob__intro-header">Jacob Paulaner</h2>
-                    <p class="jacob__intro-text">Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
-                    <p class="jacob__intro-text">He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
-                </div>
-                <div class="jacob__image">
-                    <img src="./image/Jacob.png" alt="Jacob">
-                </div>
-            </section>
-            <section class="subscribe">
-                <div class="subscribe__header">
-                    <p class="subscribe__header-paragraph">Email Newsletter</p>
-                    <h2 class="subscribe__header-title">Subscribe for updates</h2>
-                </div>
-                <div class="subscribe__form">
-                    <div class="subscribe__form-item">
-                        <input class="subscribe__form-input" type="text" placeholder="Name">
-                    </div>
-                    <div class="subscribe__form-item">
-                        <input class="subscribe__form-input" type="text" placeholder="Email">
-                    </div>
-                    <button class="subscribe__form-button"><span>Submit</span></button>
-                </div>
-            </section>
-            <section class="reviews">
-                <div class="reviews__item">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <div class="reviews__star"></div>
-                    <h3 class="reviews__title">I can't recommend this podcast enough</h3>
-                    <span class="reviews__name">Betty Lacey</span>
-                </div>
-                <div class="reviews__item">
-                    <div class="reviews__star"></div>
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <h3 class="reviews__title">Jacob is the best in the business</h3>
-                    <span class="reviews__name">Adam Driver</span>
-                </div>
-                <div class="reviews__item">
-                    <div class="reviews__star"></div>
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <h3 class="reviews__title">A wealth of audio knowledge</h3>
-                    <span class="reviews__name">Marcus Brown</span>
-                </div>
-                <div class="reviews__item">
-                    <div class="reviews__star"></div>
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <h3 class="reviews__title">Every episode is a gem!</h3>
-                    <span class="reviews__name">Jessica Knowl</span>
-                </div>
-                <div class="reviews__item">
-                    <div class="reviews__star"></div>
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <h3 class="reviews__title">Whoa whoa, let me take some notes!</h3>
-                    <span class="reviews__name">Scott Adams</span>
-                </div>
-                <div class="reviews__item">
-                    <div class="reviews__star"></div>
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <img src="./image/star.svg" alt="star">
-                    <h3 class="reviews__title">I've upped my game considerably since I started listening</h3>
-                    <span class="reviews__name">Steven Blast</span>
-                </div>
-            </section>
-        </main>
-        <footer class="footer" id="contact">
-            <div class="footer__item">
-                <div class="footer__logo">
-                    <img src="./image/logo.png" alt="logo">
-                </div>
-                <div class="footer__social">
-                    <div class="footer__icon">
-                        <img src="./image/insta.png" alt="insta">
-                    </div>
-                    <div class="footer__icon">
-                        <img src="./image/twitter.png" alt="twitter">
-                    </div>
-                    <div class="footer__icon">
-                        <img src="./image/facebook.png" alt="facebook">
-                    </div>
-                </div>
-            </div>
-            <div class="footer__item">
-                <ul class="footer__nav">
-                    <li><a class="footer__link" href="#">Home</a></li>
-                    <li><a class="footer__link" href="#">About</a></li>
-                    <li><a class="footer__link" href="#">Episodes</a></li>
-                    <li><a class="footer__link" href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer__item">
-                <ul class="footer__nav">
-                    <li><a class="footer__link" href="#">Style Guide</a></li>
-                    <li><a class="footer__link" href="#">Instructions</a></li>
-                    <li><a class="footer__link" href="#">Changelog</a></li>
-                    <li><a class="footer__link" href="#">Credit</a></li>
-                    <li><a class="footer__link" href="#">Powered by Webflow</a></li>
-                    <li><a class="footer__link" href="#">Licenses</a></li>
-                </ul>
-            </div>
-            <div class="footer__item">
-                <div class="footer__apps">
-                    <div class="footer__app">
-                        <img src="./image/spotify.png" alt="spotify">
-                    </div>
-                    <div class="footer__app">
-                        <img src="./image/krasnoe.svg" alt="krasnoe">
-                    </div>
-                    <div class="footer__app">
-                        <img src="./image/sound.svg" alt="sound">
-                    </div>
-                    <div class="footer__app">
-                        <img src="./image/fiol.svg" alt="fiol">
-                    </div>
-                    <div class="footer__app">
-                        <img src="./image/radio.svg" alt="radio">
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    
+
+<div class="container">
+    <h1>Таймер до нашей встречи</h1>
+    <div id="timer">Загрузка...</div>
+    <img id="image" src="../Timer/img/photo.jpg" alt="Фото">
+    <button onclick="closeApp()">Закрыть</button>
+</div>
+
+<script>
+// Список комплиментов
+const compliments = [
+    "Ты - настоящее воплощение красоты.",
+    "Твоя улыбка способна осветить весь мир.",
+    "Ты - как солнечный луч в пасмурный день.",
+    "В твоих глазах отражается весь мир.",
+    "Ты — самая нежная и удивительная.",
+    "Твоя энергия вдохновляет на подвиги.",
+    "Ты — просто магия, а не девушка.",
+    "Твои слова — как музыка для моей души.",
+    "Я потеряюсь в твоем взгляде и забуду обо всем на свете.",
+    "Ты как космос — всегда загадочна, но неизменно прекрасна.",
+    "Ты как весна, которая пробуждает в сердце любовь.",
+    "Твои глаза — это целый океан, в который можно утонуть.",
+    "Ты — моя самая большая удача.",
+    "Ты вдохновляешь меня быть лучшим каждый день.",
+    "Ты — как звездочка, светишь ярче всех.",
+    "С тобой каждый момент становится особенным.",
+    "Ты обладаешь невероятной харизмой.",
+    "Твои волосы — как шелк, ты — воплощение утонченной красоты.",
+    "Ты — лучшая из лучших.",
+    "Твои смех и радость — самые ценимые моменты в жизни.",
+    "Ты словно совершенство, которое ожило.",
+    "С тобой я забываю о времени, ты делаешь его волшебным.",
+    "Ты — словно солнечный свет, который пробивается сквозь облака.",
+    "Ты — воплощение элегантности и изысканности.",
+    "Ты — самая удивительная и уникальная.",
+];
+
+// Дата встречи
+const meetingDate = new Date('2025-01-07T00:00:00');
+
+// Функция для отображения случайного комплимента
+function getRandomCompliment() {
+    const randomIndex = Math.floor(Math.random() * compliments.length);
+    return compliments[randomIndex];
+}
+
+// Функция для обновления таймера
+function updateTimer() {
+    const now = new Date();
+    const remainingTime = meetingDate - now;
+
+    if (remainingTime > 0) {
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        document.getElementById('timer').innerText = `${getRandomCompliment()} Мы встретимся через: ${days} д. ${hours} ч. ${minutes} мин. ${seconds} сек.`;
+        
+        // Сохраняем обновленный таймер в localStorage для будущих обновлений
+        localStorage.setItem('remainingTime', remainingTime);
+    } else {
+        document.getElementById('timer').innerText = 'Время пришло! ❤️';
+    }
+}
+
+// Обновление таймера каждую секунду
+setInterval(updateTimer, 1000);
+
+// Обновление комплимента каждую 5 секунду (5000 миллисекунд)
+setInterval(function() {
+    document.getElementById('timer').innerText = getRandomCompliment();
+}, 5000);
+
+// При загрузке страницы проверим, есть ли сохраненное время в localStorage
+window.onload = function() {
+    const savedRemainingTime = localStorage.getItem('remainingTime');
+
+    if (savedRemainingTime) {
+        // Если время сохранено, используем его
+        meetingDate.setTime(new Date().getTime() + parseInt(savedRemainingTime));
+    }
+
+    // Обновление таймера каждую секунду
+    setInterval(updateTimer, 1000);
+};
+
+// Функция для закрытия приложения
+function closeApp() {
+    window.close();
+}
+</script>
 
 </body>
 </html>
